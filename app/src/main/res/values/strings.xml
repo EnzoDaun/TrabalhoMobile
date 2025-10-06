@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Lista de Compras</string>
+
+    <!-- Login -->
+    <string name="login_title">Login</string>
+    <string name="email_hint">E-mail</string>
+    <string name="password_hint">Senha</string>
+    <string name="login_button">Entrar</string>
+    <string name="register_link">Não tem conta? Cadastre-se</string>
+
+    <!-- Register -->
+    <string name="register_title">Cadastro</string>
+    <string name="name_hint">Nome</string>
+    <string name="confirm_password_hint">Confirmar senha</string>
+    <string name="register_button">Cadastrar</string>
+
+    <!-- Shopping Lists -->
+    <string name="lists_title">Suas Listas</string>
+    <string name="search_lists_hint">Buscar listas...</string>
+    <string name="no_lists">Nenhuma lista criada</string>
+    <string name="add_list">Adicionar Lista</string>
+    <string name="delete_list">Excluir</string>
+    <string name="edit_list">Editar</string>
+
+    <!-- Add/Edit List -->
+    <string name="add_list_title">Adicionar Lista</string>
+    <string name="edit_list_title">Editar Lista</string>
+    <string name="list_title_hint">Título da lista</string>
+    <string name="select_image">Selecionar imagem</string>
+    <string name="take_photo">Tirar foto</string>
+    <string name="choose_image_source">Escolher origem da imagem</string>
+    <string name="save_button">Salvar</string>
+    <string name="cancel_button">Cancelar</string>
+
+    <!-- Items -->
+    <string name="items_title">Itens</string>
+    <string name="search_items_hint">Buscar itens...</string>
+    <string name="no_items">Nenhum item adicionado</string>
+    <string name="add_item">Adicionar Item</string>
+    <string name="purchased_section">Comprados</string>
+    <string name="not_purchased_section">Pendentes</string>
+    <string name="delete_item">Excluir</string>
+    <string name="edit_item">Editar</string>
+
+    <!-- Add/Edit Item -->
+    <string name="add_item_title">Adicionar Item</string>
+    <string name="edit_item_title">Editar Item</string>
+    <string name="item_name_hint">Nome do item</string>
+    <string name="quantity_hint">Quantidade</string>
+    <string name="unit_hint">Unidade (kg, un, L, etc)</string>
+    <string name="category_hint">Categoria</string>
+
+    <!-- Categories -->
+    <string name="category_fruits">Frutas</string>
+    <string name="category_vegetables">Verduras</string>
+    <string name="category_meat">Carnes</string>
+    <string name="category_dairy">Laticínios</string>
+    <string name="category_bakery">Padaria</string>
+    <string name="category_drinks">Bebidas</string>
+    <string name="category_cleaning">Limpeza</string>
+    <string name="category_hygiene">Higiene</string>
+    <string name="category_other">Outros</string>
+
+    <!-- Menu -->
+    <string name="action_logout">Sair</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_settings">Configurações</string>
+
+    <!-- Messages -->
+    <string name="logout_confirmation">Tem certeza que deseja sair?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="delete_confirmation">Tem certeza que deseja excluir?</string>
+    <string name="list_deleted">Lista excluída</string>
+    <string name="item_deleted">Item excluído</string>
+    <string name="camera_permission_denied">Permissão de câmera negada</string>
+
+    <!-- Template strings (for compatibility with original files) -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet.</string>
+</resources>

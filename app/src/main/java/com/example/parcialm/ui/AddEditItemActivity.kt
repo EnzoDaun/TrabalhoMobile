@@ -2,7 +2,6 @@
 package com.example.parcialm.ui
 
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -65,9 +64,7 @@ class AddEditItemActivity : AppCompatActivity() {
 
     // [RF004] Configurar Spinner de categorias
     private fun setupCategorySpinner() {
-        val categories = Category.values().map { it.displayName }
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categories)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        val adapter = CategorySpinnerAdapter(this, Category.values())
         binding.spinnerCategory.adapter = adapter
     }
 
@@ -77,7 +74,8 @@ class AddEditItemActivity : AppCompatActivity() {
             val name = binding.etName.text.toString()
             val quantity = binding.etQuantity.text.toString()
             val unit = binding.etUnit.text.toString()
-            val category = binding.spinnerCategory.selectedItem.toString()
+            val selectedCategory = binding.spinnerCategory.selectedItem as Category
+            val category = selectedCategory.displayName
 
             viewModel.saveItem(itemId, listId, name, quantity, unit, category)
         }

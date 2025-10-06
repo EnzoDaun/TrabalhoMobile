@@ -9,20 +9,13 @@
     android:paddingStart="16dp"
     android:paddingEnd="16dp">
 
-    <ImageView
-        android:id="@+id/ivCategoryIcon"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:contentDescription="@string/category_hint" />
-
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textStyle="bold"
-        android:textColor="?attr/colorPrimary" />
+        android:textColor="?android:textColorPrimary" />
 
 </LinearLayout>
-

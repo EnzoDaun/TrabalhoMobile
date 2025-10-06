@@ -71,9 +71,8 @@ class ItemAdapter(
 
     inner class CategoryHeaderViewHolder(private val binding: ItemCategoryHeaderBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(category: String) {
-            binding.tvCategory.text = category
             val categoryEnum = Category.fromDisplayName(category)
-            binding.ivCategoryIcon.setImageResource(categoryEnum.iconRes)
+            binding.tvCategory.text = "${categoryEnum.emoji} ${categoryEnum.displayName}"
         }
     }
 
@@ -83,14 +82,19 @@ class ItemAdapter(
             binding.tvName.text = item.name
             binding.tvQuantity.text = "${item.quantity} ${item.unit}"
 
+            val categoryEnum = Category.fromDisplayName(item.category)
+            binding.tvCategoryEmoji.text = categoryEnum.emoji
+
             if (item.purchased) {
                 binding.tvName.paintFlags = binding.tvName.paintFlags or android.graphics.Paint.STRIKE_THRU_TEXT_FLAG
                 binding.tvName.alpha = 0.6f
                 binding.tvQuantity.alpha = 0.6f
+                binding.tvCategoryEmoji.alpha = 0.6f
             } else {
                 binding.tvName.paintFlags = binding.tvName.paintFlags and android.graphics.Paint.STRIKE_THRU_TEXT_FLAG.inv()
                 binding.tvName.alpha = 1.0f
                 binding.tvQuantity.alpha = 1.0f
+                binding.tvCategoryEmoji.alpha = 1.0f
             }
 
             binding.cbPurchased.setOnClickListener { onItemClick(item) }
